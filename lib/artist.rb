@@ -19,6 +19,9 @@ class Artist
     @@artists
   end
   
+  def self.reset_all
+    @@artists.reset 
+  end 
 
   def add_song(song)
     @songs << song
